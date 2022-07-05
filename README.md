@@ -38,3 +38,7 @@
  - src : 소스코드
  - package.json : 라이브러리 버전 및 프로젝트 설정 (like pom.xml..)
  - public : html, 정적 파일 보관
+
+6. 데이터 바인딩
+ (1) {{변수명}}
+ (2) :style="변수명"
