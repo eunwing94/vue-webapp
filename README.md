@@ -19,6 +19,7 @@
 3. Vue.js 설치
  (1) Node.js 설치
  (2) 터미널에서 npm install -g @vue/cli 
+   ** npm이란? JS 오픈소스 패키지 모음집
  (3) VS Code 등의 IDE 설치
     ** 코딩을 편리하게 해주는 부가기능 (Extensions) : Vue 3 Snnippets, HTML CSS support, Vetur
     
@@ -31,12 +32,16 @@
  - npm이라 웹개발에 필요한 라이브러리 설치 모음집, 이를 위해 Node.js 사전 설치 필요
  - 사실상 브라우저는 .vue를 읽지 못함
  - 그래서, public>index.html을 참고하면, App.vue에서 짠 코드를 HTML로 변환하여 크롬에서 읽게 해줌
-   -- 해다 소스 세팅은 main.js에서 해줌
+   -- 여기서 해당 소스 세팅은 main.js에서 해줌
 
-5. 폴더 설명
- - node_modules : 설치한 라이브러리들
+정리하자면, 실행 순서는 아래와 같다.
+ > (1) main.js 에서 ./App.vue를 읽어와서 mount 시킴
+   (2) App.vue 에서 HelloWorld.vue를 import 시킴
+   (3)  
  - src : 소스코드
+   -- main.js : 가장 최초로 실행되는 JS
  - package.json : 라이브러리 버전 및 프로젝트 설정 (like pom.xml..)
+ - package-lock.json : dependency 관리
  - public : html, 정적 파일 보관
 
 6. 데이터 바인딩
